@@ -36,13 +36,29 @@ function search(arr, condition) {
   return null;
 }
 
+function doubleArrayElements(num) {
+  return num * 2;
+}
+/******************************************/
+//transform([1, 2, 3], (num) => num * 2);
+// [2, 4, 6]
 
-function transform(arr, transformer) {
-  return []
+function divideByTwoArrayElements(num) {
+  return num / 2;
 }
 
-transform([1, 2, 3], (num) => num * 2);
-// [2, 4, 6]
+function transform(arr, transformer) {
+  let doubled = [];
+  for (let i = 0; i < arr.length; i++) {
+    doubled[i] = transformer(arr[i]);
+  }
+  return doubled;
+}
+
+const array = [2, 4, 6];
+console.log(`Original array: [${array}]`);
+console.log(transform(array, doubleArrayElements));
+/********************************************/
 
 function searchByKeyValue(arr, key, value) {
   for (let i = 0; i < arr.length; i++) {
