@@ -36,12 +36,12 @@ function search(arr, condition) {
   return null;
 }
 
-function doubleArrayElements(num) {
-  return num * 2;
-}
 /******************************************/
 //transform([1, 2, 3], (num) => num * 2);
 // [2, 4, 6]
+function doubleArrayElements(num) {
+  return num * 2;
+}
 
 function divideByTwoArrayElements(num) {
   return num / 2;
